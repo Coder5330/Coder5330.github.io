@@ -10,7 +10,7 @@
                 background-color: #0b0e14;
                 color: #abb2bf;
                 padding: 2rem;
-                max-width: 800px;
+                max-width: 900px;
                 margin: 0 auto;
                 line-height: 1.6;
             }
@@ -27,11 +27,46 @@
             a:hover {
                 text-decoration: underline;
             }
+            h1 {
+                color: #61afef; /* Clear blue for the main page header */
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
             h2 {
-                color: #e06c75; /* Subtle rust red for headers */
+                color: #e06c75; /* Subtle rust red for section headers */
                 border-bottom: 1px solid #282c34;
                 padding-bottom: 0.3rem;
                 font-size: 1.2rem;
+                margin-top: 2rem;
+            }
+            .bio-container {
+                background-color: #1e222b;
+                border-left: 3px solid #4ed1a4;
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+                font-size: 0.95rem;
+                line-height: 1.7;
+                color: #abb2bf;
+                max-height: 400px;
+                overflow-y: auto;
+            }
+            .bio-container::-webkit-scrollbar {
+                width: 8px;
+            }
+            .bio-container::-webkit-scrollbar-track {
+                background: #0b0e14;
+            }
+            .bio-container::-webkit-scrollbar-thumb {
+                background: #4ed1a4;
+                border-radius: 4px;
+            }
+            .bio-footer {
+                font-size: 0.8rem;
+                color: #5c6370;
+                font-style: italic;
+                margin-top: 0.8rem;
+                border-top: 1px dashed #282c34;
+                padding-top: 0.8rem;
             }
             .meta {
                 font-size: 0.85rem;
@@ -46,23 +81,40 @@
                 border-radius: 3px;
                 color: #e5c07b;
             }
+            footer {
+                margin-top: 2rem;
+            }
         </style>
     </head>
     <body>
     
     <pre>
        JJJ   OOOOOOO   SSSSS   H     H   U     U     A    
-        J    O     O  S        H     H   U     U    A A   
-        J    O     O  S        H     H   U     U   A   A  
-        J    O     O   SSSSS   HHHHHHH   U     U  AAAAAAA 
-        J    O     O        S  H     H   U     U  A     A 
-    J   J    O     O        S  H     H   U     U  A     A 
+        J   O       O S        H     H   U     U    A A   
+        J   O       O S        H     H   U     U   A   A  
+        J   O       O  SSSSS   HHHHHHH   U     U  AAAAAAA 
+        J   O       O       S  H     H   U     U  A     A 
+    J   J   O       O       S  H     H   U     U  A     A 
      JJJ     OOOOOOO   SSSSS   H     H    UUUUU   A     A
     </pre>
     <p>(or Coder5330)</p>
     
     <h1>About Me</h1>
-    <p>I don't like writing about pages. </p>
+    <div class="bio-container">
+        <p>Hi! I'm someone, a sesquipedalian, perspicacious-adjacent snoutfair of unbounded quiddity, whose sempiternal origins predate any known act of tergiversation, currently domiciled in a liminal, crepuscular territory whose syzygy with any actual nation remains, at best, incompossible.</p>
+        
+        <p>Their proprioception is described by close associates as "functionally gossamer," their athleticism a matter of ongoing aporia subject to periodic apophenia by relatives with no relevant quiddity of their own.</p>
+        
+        <p>Age presents as a textbook contronym - a hapax legomenon of a number, appearing once, meaning its opposite, resistant to all epiphenomenal analysis.</p>
+        
+        <p>Height, likewise, is best rendered in acnestis-lengths: unreachable, unverifiable, and tenebrous in every reported measurement.</p>
+        
+        <p>Professionally, they practice a rarefied form of circumlocution-adjacent obfuscation, occasionally shading into full floccinaucinihilipilification of their own job title, which remains a lacuna so persistent it has achieved sempiternal status in HR records.</p>
+        
+        <p>In sum: a loquacious, ultracrepidarian, faintly somnambulant individual of mellifluous self-presentation, whose entire dossier - decoded, cross-referenced, and perspicaciously parsed - yields, with sesquipedalian confidence, precisely nothing.</p>
+        
+        <div class="bio-footer">(Very helpful biography that says absolutely nothing even if you bothered to decode the loquacious English used)</div>
+    </div>
     
     <h2>Contact</h2>
     <p><strong>Mail:</strong> <a href="mailto:hello@jldev.me">hello@jldev.me</a></p>
