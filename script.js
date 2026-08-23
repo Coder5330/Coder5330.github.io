@@ -95,9 +95,9 @@ function cmdContact() {
 }
 
 function cmdAbout() {
-    appendLine('Most of what I make lives on GitHub, not on this page.', 'out');
-    appendLine('This site is deliberately small. Type `projects` to see what I\'ve', 'out');
-    appendLine('actually been building, pulled live — no copy-pasted portfolio to go stale.', 'out');
+    appendLine('Most of what I make lives on <a href="https://github.com/Coder5330" target="_blank" rel="noopener">GitHub</a>.', 'out');
+    appendLine('Type `projects` to see what I\'ve been building,');
+    appendLine('fetched directly from GitHub');
 }
 
 function cmdLs() {
