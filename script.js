@@ -174,13 +174,7 @@ document.querySelector('.terminal').addEventListener('click', () => input.focus(
 async function boot() {
     appendBanner();
     await sleep(150);
-
-    appendCommandEcho('Coder5330@jldev.me:~$ whoami');
-    await sleep(120);
-    appendLine('Coder5330', 'bright');
-    await sleep(300);
-
-    appendCommandEcho('Coder5330@jldev.me:~$cat README.md');
+    appendCommandEcho('cat README.md', false);
     await sleep(120);
     cmdReadme();
     appendLine('Type `help` to see what it can do.', 'dim');
