@@ -175,12 +175,12 @@ async function boot() {
     appendBanner();
     await sleep(150);
 
-    appendCommandEcho('whoami');
+    appendCommandEcho('Coder5330@jldev.me:~$ whoami');
     await sleep(120);
     appendLine('Coder5330', 'bright');
     await sleep(300);
 
-    appendCommandEcho('cat README.md');
+    appendCommandEcho('Coder5330@jldev.me:~$cat README.md');
     await sleep(120);
     cmdReadme();
     appendLine('Type `help` to see what it can do.', 'dim');
