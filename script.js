@@ -50,13 +50,14 @@ function sleep(ms) {
 }
 
 const HELP = [
-    'about       who this is',
-    'projects    pull recent repos from github, live',
-    'contact     mail / discord / github',
-    'ls          list sections',
-    'banner      reprint the header',
-    'clear       clear the screen',
-    'help        show this list',
+    'cat about.txt       who am I',
+    'cat projects.txt    see recent repos from GitHub',
+    'cat contact.txt     mail, discord, GitHub',
+    'cat README.txt      see short README',
+    'ls                  list sections',
+    'banner              reprint the header',
+    'clear               clear the screen',
+    'help                show this list',
 ];
 
 async function cmdProjects() {
