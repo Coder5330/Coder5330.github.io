@@ -101,23 +101,27 @@ function cmdAbout() {
 }
 
 function cmdLs() {
-    ['about', 'projects', 'contact'].forEach(f => appendLine(f, 'out'));
+    ['about.txt', 'projects.txt', 'contact.txt', 'README.md'].forEach(f => appendLine(f, 'out'));
+}
+
+function cmdReadme() {
+    appendLine('Building things, mostly on GitHub.');
 }
 
 const COMMANDS = {
     help: () => HELP.forEach(l => appendLine(l, 'out')),
-    about: cmdAbout,
-    projects: cmdProjects,
-    contact: cmdContact,
+    'cat about.txt': cmdAbout,
+    'cat projects.txt': cmdProjects,
+    'cat contact.txt': cmdContact,
+    'cat readme.md': cmdReadme,
     ls: cmdLs,
     banner: appendBanner,
-    whoami: () => appendLine('guest (that\'s you)', 'out'),
+    whoami: () => appendLine('Coder5330', 'out'),
     clear: () => { output.innerHTML = ''; },
-    date: () => appendLine(new Date().toString(), 'dim'),
 };
 
-function handleSudo(rest) {
-    appendLine('Nice try. Permission denied — this isn\'t that kind of website.', 'error');
+function handleSudo() {
+    appendLine('Permission denied.', 'error');
 }
 
 const history = [];
@@ -134,7 +138,7 @@ function runCommand(raw) {
     const lower = cmd.toLowerCase();
 
     if (lower.startsWith('sudo')) {
-        handleSudo(cmd.slice(4).trim());
+        handleSudo();
         return;
     }
 
@@ -175,9 +179,9 @@ async function boot() {
     appendLine('Coder5330', 'bright');
     await sleep(300);
 
-    appendCommandEcho('cat about.md');
+    appendCommandEcho('cat README.md');
     await sleep(120);
-    appendLine('Building things, mostly on GitHub. This page is a shell, not a brochure.', 'out');
+    cmdReadme();
     appendLine('Type `help` to see what it can do.', 'dim');
     await sleep(200);
 
