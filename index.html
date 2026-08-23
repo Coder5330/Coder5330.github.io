@@ -1,115 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coder5330</title>
-  <style>
-      :root {
-          --bg: #0b0d0a;
-          --fg: #c9f2c9;
-          --fg-dim: #5f8a5f;
-          --accent: #7fff9f;
-      }
-  
-      * { box-sizing: border-box; }
-  
-      html, body {
-          height: 100%;
-          margin: 0;
-      }
-  
-      body {
-          background: var(--bg);
-          color: var(--fg);
-          font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 24px;
-      }
-  
-      .card {
-          max-width: 480px;
-          width: 100%;
-      }
-  
-      .path {
-          color: var(--fg-dim);
-          font-size: 0.85rem;
-          margin: 0 0 8px;
-          letter-spacing: 0.02em;
-      }
-  
-      h1 {
-          font-size: 1.4rem;
-          font-weight: 500;
-          margin: 0 0 20px;
-          color: var(--fg);
-      }
-  
-      p {
-          font-size: 0.95rem;
-          line-height: 1.6;
-          color: var(--fg-dim);
-          margin: 0 0 28px;
-      }
-  
-      a.enter {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          color: var(--accent);
-          text-decoration: none;
-          font-size: 1rem;
-          border: 1px solid var(--fg-dim);
-          padding: 10px 16px;
-          border-radius: 2px;
-          transition: border-color 0.15s ease, background 0.15s ease;
-      }
-  
-      a.enter:hover,
-      a.enter:focus-visible {
-          border-color: var(--accent);
-          background: rgba(127, 255, 159, 0.06);
-          outline: none;
-      }
-  
-      a.enter::before {
-          content: '>';
-          color: var(--fg-dim);
-      }
-  
-      .cursor {
-          display: inline-block;
-          width: 8px;
-          height: 1em;
-          background: var(--accent);
-          margin-left: 4px;
-          vertical-align: middle;
-          animation: blink 1s step-end infinite;
-      }
-  
-      @media (prefers-reduced-motion: reduce) {
-          .cursor { animation: none; }
-      }
-  
-      @keyframes blink {
-          50% { opacity: 0; }
-      }
-  </style>
-  </head>
-  <body>
-  
-  <div class="card">
-      <p class="path">~$</p>
-      <h1>Coder5330</h1>
-      <p>
-          Most of what I make lives on GitHub, not on this page.
-          There's a small interactive terminal here if you'd rather poke around than read a bio.
-      </p>
-      <a class="enter" href="/terminal/">enter_terminal<span class="cursor"></span></a>
-  </div>
-  
-  </body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder5330</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+    <div class="card">
+        <nav>
+            <a href="/" aria-current="page">main</a>
+            <a href="/terminal/">terminal</a>
+        </nav>
+    
+        <p class="path">~$</p>
+        <h1>Coder5330</h1>
+        <p class="bio">
+            Building things, mostly on GitHub. No fixed stack, no fixed hours &mdash;
+            whatever the current project needs.
+        </p>
+    </div>
+    
+    </body>
 </html>
