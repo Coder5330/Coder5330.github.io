@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coder5330</title>
-    <meta name="description" content="Coder5330 — projects on GitHub. A terminal you can actually type into.">
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coder5330</title>
+        <meta name="description" content="Coder5330 — projects on GitHub. A terminal you can actually type into.">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     
     <div class="crt">
-      <div class="scanlines" aria-hidden="true"></div>
-      <div class="terminal">
-        <div class="term-bar">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-amber"></span>
-          <span class="dot dot-dim"></span>
-          <span class="term-title">guest@jldev: ~</span>
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="terminal">
+            <div class="term-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-dim"></span>
+                <span class="term-title">guest@jldev: ~</span>
+            </div>
+            <div class="term-body" id="output" role="log" aria-live="polite"></div>
+            <div class="term-input-line">
+                <span class="prompt">guest@jldev:~$</span>
+                <input id="cmd-input" class="cmd-input" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Terminal command input">
+            </div>
         </div>
-        <div class="term-body" id="output" role="log" aria-live="polite"></div>
-        <div class="term-input-line">
-          <span class="prompt">guest@jldev:~$</span>
-          <input id="cmd-input" class="cmd-input" type="text" autocomplete="off" spellcheck="false"
-                 autocapitalize="off" autocorrect="off" aria-label="Terminal command input">
-        </div>
-      </div>
-      <footer class="term-footer">
-        <a href="https://github.com/Coder5330/Coder5330.github.io" target="_blank" rel="noopener">source</a>
-      </footer>
+        <footer class="term-footer">
+            <a href="https://github.com/Coder5330/Coder5330.github.io" target="_blank" rel="noopener">source</a>
+        </footer>
     </div>
     
     <script src="script.js"></script>
-    
     </body>
 </html>
