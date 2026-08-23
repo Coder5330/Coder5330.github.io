@@ -116,7 +116,7 @@ const COMMANDS = {
     'cat readme.md': cmdReadme,
     ls: cmdLs,
     banner: appendBanner,
-    whoami: () => appendLine('Coder5330', 'out'),
+    whoami: () => appendLine('guest', 'out'),
     clear: () => { output.innerHTML = ''; },
 };
 
