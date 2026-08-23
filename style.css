@@ -49,33 +49,6 @@ body {
     border-color: var(--fg-dim);
 }
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.6;
-}
-
-.dot-red {
-    background: var(--red);
-}
-
-.dot-amber {
-    background: var(--accent);
-}
-
-.dot-dim {
-    background: var(--fg-dim2);
-}
-
-.term-title {
-    margin-left: 0.5rem;
-    font-size: 0.75rem;
-    color: var(--fg-dim);
-    letter-spacing: 0.02em;
-}
-
 .term-body {
     height: 56vh;
     max-height: 480px;
