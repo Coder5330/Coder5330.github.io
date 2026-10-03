@@ -177,7 +177,7 @@ async function boot() {
     appendCommandEcho('cat README.md', false);
     await sleep(120);
     cmdReadme();
-    appendLine('Type `help` to see what it can do.', 'dim');
+    appendLine('Type `help` to see what this page can do.', 'dim');
     await sleep(200);
 
     input.focus();
